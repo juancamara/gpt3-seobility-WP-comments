@@ -1,0 +1,66 @@
+.screenevolution-form .screenevolutionTogglePassword {
+    margin-left: -35px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    cursor: pointer;
+    color: #0071a1;
+    position: relative;
+    z-index: 1;
+}
+
+.screenevolution-form #screenevolution-wc-integration\[code\],
+.screenevolution-form #screenevolution-wc-integration\[api_key\] {
+    padding-right: 30px;
+}
+
+@media only screen and (max-width: 781px) {
+    .screenevolution-form .screenevolutionTogglePassword {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.screenevolution-form .relative,
+.screenevolution-form .button-holder,
+.screenevolution-wrapper .relative,
+.screenevolution-wrapper .button-holder {
+    position: relative;
+}
+
+.screenevolution-form .button-holder,
+.screenevolution-wrapper .button-holder {
+    display: inline-block;
+}
+
+.screenevolution-wrapper .button-holder.loading > button {
+    opacity: 0.7;
+}
+
+.screenevolution-wrapper .button-holder.loading::after {
+    content: "";
+    animation: screenevolution-spin 500ms infinite linear;
+    border: 2px solid #000000;
+    border-radius: 32px;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+}
+
+@keyframes screenevolution-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
